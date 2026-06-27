@@ -1,14 +1,14 @@
 # clibo-site
 
 Landing page for **Clibo** — a private, native macOS clipboard workbench.
-Static site (plain HTML/CSS, no build step), hosted on GitHub Pages at **clibo.us**.
+Static site (plain HTML/CSS, no build step), hosted on GitHub Pages at **clibo.xyz**.
 
 ## Files
 - `index.html` — main landing page
 - `privacy.html` — privacy promise
 - `styles.css` — shared styles
 - `favicon.svg` — logo / favicon
-- `CNAME` — custom domain (`clibo.us`)
+- `CNAME` — custom domain (`clibo.xyz`)
 - `.nojekyll` — serve files as-is (no Jekyll processing)
 
 ## Local preview
@@ -22,10 +22,10 @@ cd clibo-site && python3 -m http.server 8080
 1. Create an empty GitHub repo named `clibo-site`.
 2. Push this folder to it (see commands below).
 3. Repo → **Settings → Pages** → Source: **Deploy from a branch** → Branch: `main` / root → Save.
-4. The `CNAME` file points the site at **clibo.us**. In your domain registrar, add DNS records:
-   - Apex `clibo.us` → four `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+4. The `CNAME` file points the site at **clibo.xyz**. In your domain registrar, add DNS records:
+   - Apex `clibo.xyz` → four `A` records: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - (optional) `www` → `CNAME` to `<your-username>.github.io`
-5. In Settings → Pages, set the custom domain to `clibo.us` and enable **Enforce HTTPS**.
+5. In Settings → Pages, set the custom domain to `clibo.xyz` and enable **Enforce HTTPS**.
 
 ## TODO before launch (search for `data-todo` in index.html)
 - Wire **Download** button to the latest notarized DMG (e.g. a GitHub Release asset).

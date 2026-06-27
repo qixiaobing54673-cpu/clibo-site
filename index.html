@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clibo — Never lose what you copied. A private macOS clipboard workbench.</title>
-  <meta name="description" content="Clibo is a native macOS clipboard workbench that remembers everything you copy — text, images, links, colors, code — stored locally, searchable instantly, one keystroke away. Import from Maccy in seconds. Buy once, $1.99." />
+  <meta name="description" content="Clibo remembers everything you copy — text, images, links, colors, code — all stored locally on your Mac, searchable instantly, one keystroke away. Import from Maccy in seconds. Buy once, $1.99." />
   <meta property="og:title" content="Clibo — A private macOS clipboard workbench" />
-  <meta property="og:description" content="Remember everything you copy. Local-first, searchable, one keystroke away. Import from Maccy in seconds." />
+  <meta property="og:description" content="Never lose what you copied. 100% local, searchable, one keystroke away. $1.99 one-time." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://clibo.xyz/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,157 +19,196 @@
       <a class="logo" href="/"><span class="mark">C</span> Clibo</a>
       <div class="nav-links">
         <a href="#features">Features</a>
-        <a href="#privacy">Privacy</a>
+        <a href="#why">Why Clibo</a>
         <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-primary btn-sm" href="#pricing">Get Clibo · $1.99</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="btn btn-primary btn-sm" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v1.0/Clibo-1.0.dmg">Download</a>
       </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
-    <div class="wrap">
-      <span class="eyebrow">Native for macOS · 100% local · One-time $1.99</span>
-      <h1>Never lose<br/>what you <span class="grad">copied.</span></h1>
-      <p class="lead">
-        Clibo is a macOS clipboard workbench that remembers everything you copy —
-        text, images, links, colors, code — all stored locally, searchable instantly,
-        one keystroke away.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v0.8/Clibo-0.8.dmg">↓ Download for macOS</a>
-        <a class="btn btn-ghost" href="#pricing">Buy once · $1.99</a>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Native macOS · 100% local · $1.99 one-time</span>
+        <h1>Never lose<br/>what you <span class="grad">copied.</span></h1>
+        <p class="lead">A clipboard workbench that remembers everything you copy — text, images, links, colors, code — searchable instantly, one keystroke away. All on your Mac.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v1.0/Clibo-1.0.dmg">↓ Download for macOS</a>
+          <a class="btn btn-ghost" href="https://dynamo510.gumroad.com/l/uwsir">Buy once · $1.99</a>
+        </div>
+        <p class="subnote"><b>Free 7-day trial.</b> Requires macOS 13+ · Signed &amp; notarized by Apple · Import from Maccy in seconds.</p>
       </div>
-      <p class="subnote">Requires macOS 13+ · Notarized by Apple · Free 7-day trial · Import from Maccy in seconds</p>
-
-      <!-- Search panel mockup -->
-      <div class="mockup">
-        <div class="bar">
-          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-          <div class="search">Search everything you copied…  ⇧⌘V</div>
-        </div>
-        <div class="rows">
-          <div class="row sel"><span class="tag">JSON</span> {"error":"No signatures found matching…"} <span class="src">Chrome</span></div>
-          <div class="row"><span class="tag">Color</span><span class="swatch" style="background:#5b8cff"></span> #5B8CFF <span class="src">Figma</span></div>
-          <div class="row"><span class="tag">Link</span> https://github.com/your/repo <span class="src">Safari</span></div>
-          <div class="row"><span class="tag">SQL</span> SELECT id, name FROM users WHERE… <span class="src">VS Code</span></div>
-          <div class="row"><span class="tag">Email</span> hello@clibo.xyz <span class="src">Mail</span></div>
-        </div>
+      <div class="visual">
+        <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clibo search panel">
+          <rect x="1" y="1" width="558" height="398" rx="18" fill="#14171f" stroke="#232838"/>
+          <circle cx="30" cy="30" r="6" fill="#ff5f57"/><circle cx="50" cy="30" r="6" fill="#febc2e"/><circle cx="70" cy="30" r="6" fill="#28c840"/>
+          <rect x="100" y="17" width="436" height="27" rx="8" fill="#0a0c11"/>
+          <text x="116" y="35" fill="#6b7488" font-family="-apple-system,sans-serif" font-size="13">Search everything you copied…   ⇧⌘V</text>
+          <rect x="12" y="64" width="536" height="50" rx="10" fill="#5b8cff" fill-opacity="0.16"/>
+          <rect x="24" y="79" width="56" height="20" rx="6" fill="#232a38"/><text x="33" y="93" fill="#9fb0ff" font-size="12" font-family="sans-serif" font-weight="600">JSON</text>
+          <text x="92" y="93" fill="#e8eaf0" font-size="14" font-family="ui-monospace,monospace">{"error":"No signatures found…"}</text>
+          <text x="536" y="93" text-anchor="end" fill="#6b7488" font-size="12" font-family="sans-serif">Chrome</text>
+          <rect x="24" y="135" width="56" height="20" rx="6" fill="#232a38"/><text x="32" y="149" fill="#9fb0ff" font-size="12" font-family="sans-serif" font-weight="600">Color</text>
+          <rect x="92" y="135" width="18" height="18" rx="4" fill="#5b8cff"/>
+          <text x="120" y="149" fill="#e8eaf0" font-size="14" font-family="ui-monospace,monospace">#5B8CFF</text>
+          <text x="536" y="149" text-anchor="end" fill="#6b7488" font-size="12" font-family="sans-serif">Figma</text>
+          <rect x="24" y="191" width="50" height="20" rx="6" fill="#232a38"/><text x="33" y="205" fill="#9fb0ff" font-size="12" font-family="sans-serif" font-weight="600">Link</text>
+          <text x="86" y="205" fill="#e8eaf0" font-size="14" font-family="ui-monospace,monospace">github.com/your/repo</text>
+          <text x="536" y="205" text-anchor="end" fill="#6b7488" font-size="12" font-family="sans-serif">Safari</text>
+          <rect x="24" y="247" width="44" height="20" rx="6" fill="#232a38"/><text x="32" y="261" fill="#9fb0ff" font-size="12" font-family="sans-serif" font-weight="600">SQL</text>
+          <text x="80" y="261" fill="#e8eaf0" font-size="14" font-family="ui-monospace,monospace">SELECT id, name FROM users…</text>
+          <text x="536" y="261" text-anchor="end" fill="#6b7488" font-size="12" font-family="sans-serif">VS Code</text>
+          <rect x="24" y="303" width="52" height="20" rx="6" fill="#232a38"/><text x="31" y="317" fill="#9fb0ff" font-size="12" font-family="sans-serif" font-weight="600">Image</text>
+          <rect x="88" y="299" width="34" height="26" rx="4" fill="#2b3346"/><rect x="92" y="312" width="26" height="9" rx="2" fill="#5b8cff" fill-opacity="0.6"/>
+          <text x="132" y="317" fill="#e8eaf0" font-size="14" font-family="ui-monospace,monospace">1280×800</text>
+          <text x="536" y="317" text-anchor="end" fill="#6b7488" font-size="12" font-family="sans-serif">Screenshot</text>
+          <rect x="12" y="350" width="536" height="34" rx="9" fill="#0f121a"/>
+          <text x="28" y="372" fill="#6b7488" font-size="12.5" font-family="sans-serif">↑↓ select   ·   ⏎ paste back   ·   right-click to pin</text>
+        </svg>
       </div>
     </div>
   </header>
 
+  <!-- FEATURES -->
   <section id="features">
-    <div class="wrap">
-      <h2 class="section-title">Built for people who copy all day</h2>
-      <p class="section-sub">Developers and knowledge workers copy hundreds of times a day — and care most about where that data goes.</p>
-      <div class="grid">
-        <div class="card">
-          <div class="ico">🗂️</div>
-          <h3>Everything, captured</h3>
-          <p>Text, images, files, links, colors, dates, emails, phone numbers — automatically detected and typed, so the right thing is always one search away.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🔍</div>
-          <h3>Find it by meaning</h3>
-          <p>Fast keyword and fuzzy search, plus on-device semantic search — describe what you remember, even if you forgot the exact words.</p>
-        </div>
-        <div class="card">
-          <div class="ico">⌨️</div>
-          <h3>Instant recall</h3>
-          <p>One global hotkey opens the panel. Type, arrow, hit Enter — Clibo pastes straight back into the app you were in, focus restored.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🔒</div>
-          <h3>Private by design</h3>
-          <p>100% local. No account, no cloud, no telemetry. Your full clipboard history never leaves your Mac. Password-manager content is never recorded.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📌</div>
-          <h3>Pin &amp; organize</h3>
-          <p>Pin the snippets you reuse, filter by type, preview colors, and beautify JSON with one keystroke. Pinned items never expire.</p>
-        </div>
-        <div class="card">
-          <div class="ico">✨</div>
-          <h3>BYOK AI <span class="soon">Coming soon</span></h3>
-          <p>Translate, rewrite and summarize using your own OpenAI / Anthropic / Gemini / Ollama key — processing never touches our servers.</p>
-        </div>
+    <div class="wrap center">
+      <span class="eyebrow">Features</span>
+      <h2 class="section-title">Everything you copy, at your fingertips</h2>
+      <p class="section-sub">Built for developers and knowledge workers who copy hundreds of times a day.</p>
+    </div>
+
+    <div class="wrap feature">
+      <div class="ftext">
+        <span class="eyebrow">Auto-typed</span>
+        <h3>It knows what you copied</h3>
+        <p>Links, colors, JSON, SQL, code, emails, phone numbers, dates and images are detected automatically — so the right thing is always one filter away.</p>
+        <div class="tick">Color swatches and one-key JSON beautify, built in</div>
+        <div class="tick">Filter the whole history by type in a click</div>
+      </div>
+      <div class="visual">
+        <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Type detection">
+          <rect x="1" y="1" width="558" height="358" rx="18" fill="#14171f" stroke="#232838"/>
+          <g font-family="-apple-system,sans-serif" font-size="15" font-weight="600">
+            <rect x="36" y="46" width="150" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="60" y="76" fill="#e8eaf0">🔗  Link</text>
+            <rect x="206" y="46" width="186" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><rect x="226" y="60" width="20" height="20" rx="5" fill="#5b8cff"/><text x="256" y="76" fill="#e8eaf0">#5B8CFF</text>
+            <rect x="412" y="46" width="112" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="434" y="76" fill="#e8eaf0">{ } JSON</text>
+            <rect x="36" y="116" width="158" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="60" y="146" fill="#e8eaf0">@  Email</text>
+            <rect x="214" y="116" width="120" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="238" y="146" fill="#e8eaf0">🗄  SQL</text>
+            <rect x="354" y="116" width="170" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="378" y="146" fill="#e8eaf0">☎  Phone</text>
+            <rect x="36" y="186" width="130" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="60" y="216" fill="#e8eaf0">📅  Date</text>
+            <rect x="186" y="186" width="142" height="48" rx="12" fill="#181c26" stroke="#2a3146"/><text x="210" y="216" fill="#e8eaf0">🖼  Image</text>
+            <rect x="348" y="186" width="176" height="48" rx="12" fill="#5b8cff" fill-opacity="0.14" stroke="#3b5bd6"/><text x="372" y="216" fill="#cdd8ff">&lt;/&gt;  Code</text>
+          </g>
+          <rect x="36" y="258" width="488" height="74" rx="12" fill="#0f121a" stroke="#232838"/>
+          <text x="52" y="284" fill="#7a86a8" font-size="13" font-family="ui-monospace,monospace">{"name":"clibo","ok":true}</text>
+          <text x="52" y="312" fill="#3ddc97" font-size="13" font-family="ui-monospace,monospace">⌥⏎  →  beautified, indented JSON</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="wrap feature reverse">
+      <div class="ftext">
+        <span class="eyebrow">Private by design</span>
+        <h3>Your clipboard never leaves your Mac</h3>
+        <p>Everything lives in a local database on your machine. No account. No cloud. No telemetry. There is nothing to sync and nothing to leak.</p>
+        <div class="tick">Password-manager content is never recorded</div>
+        <div class="tick">Optional AI uses your own API key — never our servers</div>
+      </div>
+      <div class="visual">
+        <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Local and private">
+          <rect x="1" y="1" width="558" height="358" rx="18" fill="#14171f" stroke="#232838"/>
+          <rect x="150" y="74" width="260" height="158" rx="14" fill="#0f121a" stroke="#2a3146"/>
+          <rect x="120" y="238" width="320" height="16" rx="8" fill="#181c26" stroke="#2a3146"/>
+          <path d="M280 104 l46 18 v34 c0 34 -24 56 -46 66 c-22 -10 -46 -32 -46 -66 v-34 z" fill="#5b8cff" fill-opacity="0.16" stroke="#5b8cff"/>
+          <path d="M268 160 l9 10 l21 -22" fill="none" stroke="#3ddc97" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="280" y="300" text-anchor="middle" fill="#9aa3b2" font-size="14" font-family="sans-serif">Everything stays on this Mac</text>
+          <text x="280" y="324" text-anchor="middle" fill="#6b7488" font-size="12" font-family="sans-serif">no account · no cloud · no telemetry</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="wrap feature">
+      <div class="ftext">
+        <span class="eyebrow">Power tools</span>
+        <h3>A workbench, not just a list</h3>
+        <p>Pin the snippets you reuse, grab text off your screen with on-device OCR, and bring your whole history over from Maccy in one click.</p>
+        <div class="tick">Global hotkey ⇧⌘V — search, then ⏎ pastes back into your app</div>
+        <div class="tick">Pinned items never expire or get trimmed</div>
+      </div>
+      <div class="visual">
+        <svg viewBox="0 0 560 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power tools">
+          <rect x="1" y="1" width="558" height="358" rx="18" fill="#14171f" stroke="#232838"/>
+          <g font-family="-apple-system,sans-serif">
+            <rect x="36" y="40" width="232" height="130" rx="14" fill="#181c26" stroke="#2a3146"/>
+            <text x="56" y="88" font-size="30">📌</text><text x="56" y="126" fill="#e8eaf0" font-size="18" font-weight="700">Pin favorites</text><text x="56" y="151" fill="#98a2b3" font-size="13">always on top, never expire</text>
+            <rect x="292" y="40" width="232" height="130" rx="14" fill="#181c26" stroke="#2a3146"/>
+            <text x="312" y="88" font-size="30">📷</text><text x="312" y="126" fill="#e8eaf0" font-size="18" font-weight="700">Screen OCR</text><text x="312" y="151" fill="#98a2b3" font-size="13">grab text from anywhere</text>
+            <rect x="36" y="190" width="232" height="130" rx="14" fill="#181c26" stroke="#2a3146"/>
+            <text x="56" y="238" font-size="30">⇄</text><text x="56" y="276" fill="#e8eaf0" font-size="18" font-weight="700">Import from Maccy</text><text x="56" y="301" fill="#98a2b3" font-size="13">one click · JSON/CSV/TXT/MD</text>
+            <rect x="292" y="190" width="232" height="130" rx="14" fill="#5b8cff" fill-opacity="0.12" stroke="#3b5bd6"/>
+            <text x="312" y="238" font-size="30">⌨️</text><text x="312" y="276" fill="#cdd8ff" font-size="18" font-weight="700">⇧⌘V → paste back</text><text x="312" y="301" fill="#9fb0ff" font-size="13">focus returns to your app</text>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
 
-  <section id="privacy" style="background:var(--bg-soft);">
-    <div class="wrap">
-      <h2 class="section-title">Your clipboard is yours</h2>
-      <p class="section-sub">
-        Most clipboard managers sync your history to their cloud. Clibo doesn't have a cloud.
-        Everything lives in a local database on your Mac — there's no account to create and nothing to leak.
-        When optional AI features arrive, they connect directly to <em>your</em> API key, never through a hosted backend.
-        That keeps our running costs near zero — which is exactly why Clibo can be a one-time purchase instead of a subscription.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-ghost" href="privacy.html">Read the privacy promise →</a>
+  <!-- WHY -->
+  <section id="why" class="why">
+    <div class="wrap center">
+      <span class="eyebrow">Why Clibo</span>
+      <h2 class="section-title">Made the way a clipboard should be</h2>
+      <div class="why-grid">
+        <div class="why-card"><div class="i">🔒</div><h4>Local-first, always</h4><p>Most managers sync your history to their cloud. Clibo has no cloud and no account — your data simply stays with you.</p></div>
+        <div class="why-card"><div class="i">💸</div><h4>Buy once, not forever</h4><p>No subscription. $1.99 one time. Because your data and keys stay on your Mac, our costs stay near zero.</p></div>
+        <div class="why-card"><div class="i">⚡</div><h4>Built for developers</h4><p>JSON, SQL, code, colors and error logs are first-class. The paste-back loop is tuned to disappear into your workflow.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- PRICING -->
   <section id="pricing">
-    <div class="wrap">
+    <div class="wrap center">
+      <span class="eyebrow">Pricing</span>
       <h2 class="section-title">Buy once. Yours forever.</h2>
-      <p class="section-sub">No subscription. No account. Just a fast, private clipboard you own.</p>
       <div class="price-card">
         <div class="price">$1.99 <small>one-time</small></div>
         <ul>
           <li>Unlimited local clipboard history</li>
           <li>Global hotkey, search &amp; instant paste-back</li>
           <li>Pin, type filters, JSON beautify, color preview</li>
-          <li>One-click import from Maccy (+ JSON/CSV/TXT/MD)</li>
+          <li>Screen OCR · One-click Maccy import</li>
           <li>100% local · no account · no telemetry</li>
           <li>Free updates within the major version</li>
         </ul>
-        <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v0.8/Clibo-0.8.dmg" style="width:100%; justify-content:center;">Start free 7-day trial</a>
-        <p class="subnote">Then $1.99 once. Requires macOS 13+.</p>
+        <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v1.0/Clibo-1.0.dmg" style="width:100%;justify-content:center;">Start free 7-day trial</a>
+        <p class="subnote">Then <a href="https://dynamo510.gumroad.com/l/uwsir" style="color:var(--accent)">$1.99 once</a>. Requires macOS 13+.</p>
       </div>
     </div>
   </section>
 
-  <section id="faq" style="background:var(--bg-soft);">
-    <div class="wrap">
-      <h2 class="section-title">Questions</h2>
-      <div class="faq">
-        <div class="qa">
-          <h4>Is my clipboard data private?</h4>
-          <p>Yes. Everything is stored in a local database on your Mac. There's no account, no cloud sync, and no analytics. Content marked sensitive by password managers is never recorded.</p>
-        </div>
-        <div class="qa">
-          <h4>I already use Maccy. Can I switch easily?</h4>
-          <p>Yes — Clibo imports your existing Maccy history in one click, and also reads JSON, CSV, TXT and Markdown files.</p>
-        </div>
-        <div class="qa">
-          <h4>Is it a subscription?</h4>
-          <p>No. Clibo is a one-time $1.99 purchase. Because your data and AI keys stay on your machine, our costs stay low — so you don't pay monthly.</p>
-        </div>
-        <div class="qa">
-          <h4>What are the system requirements?</h4>
-          <p>macOS 13 (Ventura) or later, Apple Silicon or Intel. The app is signed with a Developer ID and notarized by Apple.</p>
-        </div>
-        <div class="qa">
-          <h4>Why isn't it on the Mac App Store?</h4>
-          <p>Clibo uses a local on-device search engine that the App Store sandbox doesn't allow. Distributing directly also means no 30% cut — which helps keep the price at $1.99.</p>
-        </div>
-      </div>
-    </div>
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--bg-soft);border-top:1px solid var(--border);">
+    <div class="wrap center"><span class="eyebrow">FAQ</span><h2 class="section-title">Questions</h2></div>
+    <div class="wrap"><div class="faq">
+      <div class="qa"><h4>Is my clipboard data private?</h4><p>Yes. Everything is stored in a local database on your Mac — no account, no cloud sync, no analytics. Content marked sensitive by password managers is never recorded.</p></div>
+      <div class="qa"><h4>I already use Maccy. Can I switch easily?</h4><p>Yes — Clibo imports your existing Maccy history in one click, and also reads JSON, CSV, TXT and Markdown files.</p></div>
+      <div class="qa"><h4>Is it a subscription?</h4><p>No. Clibo is a one-time $1.99 purchase, with a free 7-day trial.</p></div>
+      <div class="qa"><h4>What are the requirements?</h4><p>macOS 13 (Ventura) or later, Apple Silicon or Intel. Signed with a Developer ID and notarized by Apple.</p></div>
+    </div></div>
   </section>
 
-  <section id="download" style="text-align:center;">
+  <!-- FINAL CTA -->
+  <section class="final">
     <div class="wrap">
-      <h2 class="section-title">Try Clibo today</h2>
-      <p class="section-sub">Download the latest build and start your free trial.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v0.8/Clibo-0.8.dmg">↓ Download Clibo for macOS</a>
-        <a class="btn btn-ghost" href="https://dynamo510.gumroad.com/l/uwsir">Buy a license · $1.99</a>
+      <h2 class="section-title">Never lose what you copied.</h2>
+      <p class="section-sub" style="margin:12px auto 0;">Try Clibo free for 7 days.</p>
+      <div class="cta-row" style="justify-content:center;margin-top:28px;">
+        <a class="btn btn-primary" href="https://github.com/qixiaobing54673-cpu/clibo-site/releases/download/v1.0/Clibo-1.0.dmg">↓ Download for macOS</a>
+        <a class="btn btn-ghost" href="https://dynamo510.gumroad.com/l/uwsir">Buy · $1.99</a>
       </div>
-      <p class="subnote">Build links are wired up at release. See README for setup.</p>
     </div>
   </section>
 
@@ -176,8 +217,8 @@
       <div class="logo"><span class="mark">C</span> Clibo</div>
       <div class="foot-links">
         <a href="privacy.html">Privacy</a>
-        <a href="#" data-todo="support/feedback URL">Support</a>
         <a href="#faq">FAQ</a>
+        <a href="https://dynamo510.gumroad.com/l/uwsir">Buy</a>
         <a href="mailto:hello@clibo.xyz">Contact</a>
       </div>
       <div>© 2026 Clibo · Made for macOS</div>
